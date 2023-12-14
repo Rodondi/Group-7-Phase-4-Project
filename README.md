@@ -27,6 +27,7 @@ Models were trained on different preprocessed versions of the data, including no
 The following models were trained and evaluated:
 
 1. **Training Model Classifiers With raw tweets(Tweets with stopwords)
+   
    a) MultinomialNB
    
    b) Logistic Regression
@@ -35,7 +36,8 @@ The following models were trained and evaluated:
    
    d) Random Forest
    
-3. **Training Model Classifiers With Tuned Hyperparameters.
+2. **Training Model Classifiers With Tuned Hyperparameters.
+   
    a) MultinomialNB() with Tuned Hyperparameters
    
    b) Tuned Logistic Regression Model
@@ -44,7 +46,8 @@ The following models were trained and evaluated:
    
    d) Tuned Random Forest classifier
 
-5. **Training Model Classifiers with tuned Hyperparameters without stopwords
+3. **Training Model Classifiers with tuned Hyperparameters without stopwords
+   
    a) Tuned MultinomialNB classifier on tweets with no stopwords
    
    b) Tuned Logistic Regression on tweets with no stopwords
@@ -53,8 +56,9 @@ The following models were trained and evaluated:
    
    d) Tuned Random Forest Classifier on tweets with no stopwords
    
-7. **Training Model Classifiers with tuned Hyperparameters on tweets with no 
+4. **Training Model Classifiers with tuned Hyperparameters on tweets with no 
    stopwords but stemmatized
+   
    a) Tuned MultinomialNB classifier on tweets with no stopwords but stemmatized
    
    b) Tuned Logistic Regression classifier on tweets with no stopwords but 
@@ -65,8 +69,9 @@ The following models were trained and evaluated:
    
    d) Tuned Random Forest classifier on tweets with no stopwords but stemmatized
    
-9. Training Model Classifiers with tuned Hyperparameters on tweets with no 
+5. Training Model Classifiers with tuned Hyperparameters on tweets with no 
    stopwords but Lemmatized
+   
    a) Tuned MultinomialNB classifier on tweets with no stopwords but Lemmatized
    
    b) Tuned Logistic Regression classifier on tweets with no stopwords but lemmatized
