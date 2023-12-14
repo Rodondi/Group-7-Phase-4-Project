@@ -1,14 +1,20 @@
-
 import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
+
+# Download NLTK data if not already present
+try:
+    nltk.data.find('corpora/stopwords.zip')
+except LookupError:
+    nltk.download('stopwords')
 
 # Load the pre-trained model and vectorizer
 tuned_and_lemma_svm_model = joblib.load('tuned_and_lemma_svm_model.pkl')
@@ -46,7 +52,6 @@ def predict_sentiment(tweet):
     prediction = prediction_encoded[0]
 
     return prediction
-
 
 # Streamlit UI
 st.title('Sentiment Analysis')
