@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import nltk
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
 import string
@@ -15,6 +15,12 @@ try:
     nltk.data.find('corpora/stopwords.zip')
 except LookupError:
     nltk.download('stopwords')
+
+# Download NLTK WordNet data if not already present
+try:
+    nltk.data.find('corpora/wordnet.zip')
+except LookupError:
+    nltk.download('wordnet')
 
 # Load the pre-trained model and vectorizer
 tuned_and_lemma_svm_model = joblib.load('tuned_and_lemma_svm_model.pkl')
