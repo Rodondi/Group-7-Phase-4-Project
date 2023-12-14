@@ -23,14 +23,42 @@ The preprocessing steps include:
 
 ## Machine Learning Models
 
+Models were trained on different preprocessed versions of the data, including no preprocessing, stemming, and lemmatization.
 The following models were trained and evaluated:
 
-1. **Baseline Model (Multinomial Naive Bayes):** A starting point for comparison.
-2. **Tuned Logistic Regression:** Optimized logistic regression with hyperparameter tuning.
-3. **Tuned Support Vector Machines (SVM):** Optimized SVM with hyperparameter tuning.
-4. **Tuned Random Forest:** Optimized random forest with hyperparameter tuning.
+1. **Training Model Classifiers With raw tweets(Tweets with stopwords)
+   a) MultinomialNB
+   b) Logistic Regression
+   c) Support Vector Machines (SVM)
+   d) Random Forest
+   
+2. **Training Model Classifiers With Tuned Hyperparameters.
+   a) MultinomialNB() with Tuned Hyperparameters
+   b) Tuned Logistic Regression Model
+   c) Tuned Support Vector Machines (SVM)
+   d) Tuned Random Forest classifier
 
-Models were trained on different preprocessed versions of the data, including no preprocessing, stemming, and lemmatization.
+3. **Training Model Classifiers with tuned Hyperparameters without stopwords
+   a) Tuned MultinomialNB classifier on tweets with no stopwords
+   b) Tuned Logistic Regression on tweets with no stopwords
+   c) Tuned Support Vector Machines (SVM) on tweets with no stopwords
+   d) Tuned Random Forest Classifier on tweets with no stopwords
+   
+4. **Training Model Classifiers with tuned Hyperparameters on tweets with no 
+   stopwords but stemmatized
+   a) Tuned MultinomialNB classifier on tweets with no stopwords but stemmatized
+   b) Tuned Logistic Regression classifier on tweets with no stopwords but 
+      stemmatized
+   c) Tuned Support Vector Machines (SVM) classifier on tweets with no stopwords 
+       but stemmatized
+   d) Tuned Random Forest classifier on tweets with no stopwords but stemmatized
+   
+5. Training Model Classifiers with tuned Hyperparameters on tweets with no 
+   stopwords but Lemmatized
+   a) Tuned MultinomialNB classifier on tweets with no stopwords but Lemmatized
+   b) Tuned Logistic Regression classifier on tweets with no stopwords but lemmatized
+   c) Tuned Support Vector Machines (SVM) classifier on tweets with no stopwords but lemmatized
+   d) Tuned Random Forest classifier on tweets with no stopwords but lemmatized
 
 ## Evaluation Metrics
 
